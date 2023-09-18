@@ -1,0 +1,85 @@
+2023-08-07 13:00:40,280:INFO:file k1.mp4 uploaded
+2023-08-07 13:00:41,888:INFO:file k1.mp4 info: {'size': 38278728, 'hash': {'md5': 'c06d7091056997fefadf740bf8d8fdcd', 'sha1': 'd0ba5dc887551d8f0b469bb92dae24519fb89152'}, 'dimensions': {'width': 1920.0, 'height': 1080.0}, 'duration': 20.0, 'bitrate': 14955, 'url': 'http://monitor.adstream.ru:3001/videos/k1.mp4'}
+2023-08-07 13:00:41,893:INFO:127.0.0.1 [07/Aug/2023:10:00:39 +0000] "POST /api/video/upload HTTP/1.1" 201 430 "-" "Python/3.10 aiohttp/3.8.4"
+2023-08-07 13:00:42,100:INFO:file k1.mp4 uploaded
+2023-08-07 13:00:42,100:INFO:127.0.0.1 [07/Aug/2023:10:00:41 +0000] "GET /api/video/download HTTP/1.1" 200 38284184 "-" "python-requests/2.28.2"
+2023-08-07 13:03:23,631:INFO:file k1.mp4 uploaded
+2023-08-07 13:03:23,988:INFO:file k1.mp4 info: {'size': 38278728, 'hash': {'md5': 'c06d7091056997fefadf740bf8d8fdcd', 'sha1': 'd0ba5dc887551d8f0b469bb92dae24519fb89152'}, 'dimensions': {'width': 1920.0, 'height': 1080.0}, 'duration': 20.0, 'bitrate': 14955, 'url': 'http://monitor.adstream.ru:3001/videos/k1.mp4'}
+2023-08-07 13:03:23,989:INFO:127.0.0.1 [07/Aug/2023:10:03:22 +0000] "POST /api/video/upload HTTP/1.1" 201 430 "-" "Python/3.10 aiohttp/3.8.4"
+2023-08-07 13:03:24,062:INFO:file k1.mp4 uploaded
+2023-08-07 13:03:24,062:INFO:127.0.0.1 [07/Aug/2023:10:03:24 +0000] "GET /api/video/download HTTP/1.1" 200 38284184 "-" "python-requests/2.28.2"
+2023-08-07 13:05:40,878:INFO:file k1.mp4 uploaded
+2023-08-07 13:05:41,275:INFO:file k1.mp4 info: {'size': 38278728, 'hash': {'md5': 'c06d7091056997fefadf740bf8d8fdcd', 'sha1': 'd0ba5dc887551d8f0b469bb92dae24519fb89152'}, 'dimensions': {'width': 1920.0, 'height': 1080.0}, 'duration': 20.0, 'bitrate': 14955, 'url': 'http://monitor.adstream.ru:3001/videos/k1.mp4'}
+2023-08-07 13:05:41,277:INFO:127.0.0.1 [07/Aug/2023:10:05:39 +0000] "POST /api/video/upload HTTP/1.1" 201 430 "-" "Python/3.10 aiohttp/3.8.4"
+2023-08-07 13:05:41,384:INFO:file k1.mp4 uploaded
+2023-08-07 13:05:41,385:INFO:127.0.0.1 [07/Aug/2023:10:05:41 +0000] "GET /api/video/download HTTP/1.1" 200 38284184 "-" "python-requests/2.28.2"
+2023-08-07 13:05:46,683:ERROR:Error handling request
+Traceback (most recent call last):
+  File "/home/maks/.local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/home/maks/.local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/home/maks/Документы/python/api загрузка видео/api/server.py", line 136, in api_file_remove
+    os.replace(filename, os.path.join(arh_dir, filename))
+FileNotFoundError: [Errno 2] No such file or directory: 'k1.mp4' -> '/home/maks/Документы/python/api загрузка видео/api/arc/k1.mp4'
+2023-08-07 13:05:46,706:INFO:127.0.0.1 [07/Aug/2023:10:05:46 +0000] "POST /api/video/remove HTTP/1.1" 500 245 "-" "python-requests/2.28.2"
+2023-08-07 13:09:25,261:INFO:file k1.mp4 uploaded
+2023-08-07 13:09:25,684:INFO:file k1.mp4 info: {'size': 38278728, 'hash': {'md5': 'c06d7091056997fefadf740bf8d8fdcd', 'sha1': 'd0ba5dc887551d8f0b469bb92dae24519fb89152'}, 'dimensions': {'width': 1920.0, 'height': 1080.0}, 'duration': 20.0, 'bitrate': 14955, 'url': 'http://monitor.adstream.ru:3001/videos/k1.mp4'}
+2023-08-07 13:09:25,686:INFO:127.0.0.1 [07/Aug/2023:10:09:24 +0000] "POST /api/video/upload HTTP/1.1" 201 430 "-" "Python/3.10 aiohttp/3.8.4"
+2023-08-07 13:09:25,789:INFO:file k1.mp4 uploaded
+2023-08-07 13:09:25,790:INFO:127.0.0.1 [07/Aug/2023:10:09:25 +0000] "GET /api/video/download HTTP/1.1" 200 38284184 "-" "python-requests/2.28.2"
+2023-08-07 13:09:31,092:ERROR:Error handling request
+Traceback (most recent call last):
+  File "/home/maks/.local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/home/maks/.local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/home/maks/Документы/python/api загрузка видео/api/server.py", line 134, in api_file_remove
+    os.replace(filename, os.path.join('arc/', filename))
+FileNotFoundError: [Errno 2] No such file or directory: 'k1.mp4' -> 'arc/k1.mp4'
+2023-08-07 13:09:31,095:INFO:127.0.0.1 [07/Aug/2023:10:09:31 +0000] "POST /api/video/remove HTTP/1.1" 500 245 "-" "python-requests/2.28.2"
+2023-08-07 13:10:30,324:ERROR:unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-1' coro=<_run_app() done, defined at /home/maks/.local/lib/python3.10/site-packages/aiohttp/web.py:289> exception=OSError(98, "error while attempting to bind on address ('0.0.0.0', 3000): address already in use")>
+Traceback (most recent call last):
+  File "/home/maks/.local/lib/python3.10/site-packages/aiohttp/web.py", line 516, in run_app
+    loop.run_until_complete(main_task)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 646, in run_until_complete
+    return future.result()
+  File "/home/maks/.local/lib/python3.10/site-packages/aiohttp/web.py", line 415, in _run_app
+    await site.start()
+  File "/home/maks/.local/lib/python3.10/site-packages/aiohttp/web_runner.py", line 121, in start
+    self._server = await loop.create_server(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1505, in create_server
+    raise OSError(err.errno, 'error while attempting '
+OSError: [Errno 98] error while attempting to bind on address ('0.0.0.0', 3000): address already in use
+2023-08-07 13:10:47,036:INFO:file k1.mp4 uploaded
+2023-08-07 13:10:48,830:INFO:file k1.mp4 info: {'size': 38278728, 'hash': {'md5': 'c06d7091056997fefadf740bf8d8fdcd', 'sha1': 'd0ba5dc887551d8f0b469bb92dae24519fb89152'}, 'dimensions': {'width': 1920.0, 'height': 1080.0}, 'duration': 20.0, 'bitrate': 14955, 'url': 'http://monitor.adstream.ru:3001/videos/k1.mp4'}
+2023-08-07 13:10:48,833:INFO:127.0.0.1 [07/Aug/2023:10:10:46 +0000] "POST /api/video/upload HTTP/1.1" 201 430 "-" "Python/3.10 aiohttp/3.8.4"
+2023-08-07 13:10:48,908:INFO:file k1.mp4 uploaded
+2023-08-07 13:10:48,908:INFO:127.0.0.1 [07/Aug/2023:10:10:48 +0000] "GET /api/video/download HTTP/1.1" 200 38284184 "-" "python-requests/2.28.2"
+2023-08-07 13:10:54,151:ERROR:Error handling request
+Traceback (most recent call last):
+  File "/home/maks/.local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/home/maks/.local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/home/maks/Документы/python/api загрузка видео/api/server.py", line 134, in api_file_remove
+    os.replace(filename, os.path.join('/arc/', filename))
+FileNotFoundError: [Errno 2] No such file or directory: 'k1.mp4' -> '/arc/k1.mp4'
+2023-08-07 13:10:54,151:INFO:127.0.0.1 [07/Aug/2023:10:10:54 +0000] "POST /api/video/remove HTTP/1.1" 500 245 "-" "python-requests/2.28.2"
+2023-08-07 13:11:56,477:INFO:file k1.mp4 uploaded
+2023-08-07 13:11:57,310:INFO:file k1.mp4 info: {'size': 38278728, 'hash': {'md5': 'c06d7091056997fefadf740bf8d8fdcd', 'sha1': 'd0ba5dc887551d8f0b469bb92dae24519fb89152'}, 'dimensions': {'width': 1920.0, 'height': 1080.0}, 'duration': 20.0, 'bitrate': 14955, 'url': 'http://monitor.adstream.ru:3001/videos/k1.mp4'}
+2023-08-07 13:11:57,311:INFO:127.0.0.1 [07/Aug/2023:10:11:55 +0000] "POST /api/video/upload HTTP/1.1" 201 430 "-" "Python/3.10 aiohttp/3.8.4"
+2023-08-07 13:11:57,381:INFO:file k1.mp4 uploaded
+2023-08-07 13:11:57,381:INFO:127.0.0.1 [07/Aug/2023:10:11:57 +0000] "GET /api/video/download HTTP/1.1" 200 38284184 "-" "python-requests/2.28.2"
+2023-08-07 13:12:02,676:INFO:file k1.mp4 deleted
+2023-08-07 13:12:02,677:INFO:127.0.0.1 [07/Aug/2023:10:12:02 +0000] "POST /api/video/remove HTTP/1.1" 201 147 "-" "python-requests/2.28.2"
+2023-08-10 10:11:35,878:INFO:file k1.mp4 uploaded
+2023-08-10 10:11:36,934:INFO:file k1.mp4 info: {'size': 38278728, 'hash': {'md5': 'c06d7091056997fefadf740bf8d8fdcd', 'sha1': 'd0ba5dc887551d8f0b469bb92dae24519fb89152'}, 'dimensions': {'width': 1920.0, 'height': 1080.0}, 'duration': 20.0, 'bitrate': 14955, 'url': 'http://monitor.adstream.ru:3001/videos/k1.mp4'}
+2023-08-10 10:11:36,936:INFO:127.0.0.1 [10/Aug/2023:07:11:34 +0000] "POST /api/video/upload HTTP/1.1" 201 455 "-" "curl/7.81.0"
+2023-08-10 10:12:59,206:INFO:file k2.mp4 uploaded
+2023-08-10 10:12:59,517:INFO:file k2.mp4 info: {'size': 38278728, 'hash': {'md5': 'c06d7091056997fefadf740bf8d8fdcd', 'sha1': 'd0ba5dc887551d8f0b469bb92dae24519fb89152'}, 'dimensions': {'width': 1920.0, 'height': 1080.0}, 'duration': 20.0, 'bitrate': 14955, 'url': 'http://monitor.adstream.ru:3001/videos/k2.mp4'}
+2023-08-10 10:12:59,519:INFO:127.0.0.1 [10/Aug/2023:07:12:58 +0000] "POST /api/video/upload HTTP/1.1" 201 455 "-" "curl/7.81.0"
+2023-08-10 21:02:23,372:INFO:file test.mp4 uploaded
+2023-08-10 21:02:24,266:INFO:file test.mp4 info: {'size': 1570024, 'hash': {'md5': 'd9061d3da8601932e98f79ec8ba1c877', 'sha1': '55508bc98a00f615dbe9bd4c84a253ba4238b021'}, 'dimensions': {'width': 480.0, 'height': 270.0}, 'duration': 30.033333333333335, 'bitrate': 301, 'url': 'http://monitor.adstream.ru:3001/videos/test.mp4'}
+2023-08-10 21:02:24,267:INFO:127.0.0.1 [10/Aug/2023:18:02:22 +0000] "POST /api/video/upload HTTP/1.1" 201 466 "-" "curl/7.81.0"
